@@ -1,4 +1,6 @@
 ﻿@charset "utf-8";
+@import url(common.css)
+@import url(responsive.css)
 img{max-width:100%;}
 /* 基本レイアウト ここから↓ */
 
