@@ -260,3 +260,12 @@ var ATScroll = function(vars) {
       });
    }
 };
+
+  var atscroll = new ATScroll({
+  noScroll : 'noSmoothScroll',
+  setHash : false,
+  duration : 800,
+  interval : 10,
+  animation : 'quinticOut'
+});
+atscroll.load();
