@@ -79,3 +79,7 @@ footer {
 footer p {
 	float: none;
 }
+/*オリジナル追加*/
+.gallery_box figure:first-child,.gallery_box figure{
+  margin: 2.6%;
+}
