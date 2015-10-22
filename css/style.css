@@ -1,5 +1,6 @@
 ﻿@charset "utf-8";
 /* 基本レイアウト ここから↓ */
+@import url(reset.css);
 @import url(common.css);
 body{
   background-color: #f3f2e9;
@@ -7,6 +8,8 @@ body{
   font-size: 87.5%;
   line-height: 1.5;
 }
+
+@media screen {
 header,nav,#breadcrumb,#contents,footer{
   margin: 0 auto;
   line-height: 1.5;
@@ -28,8 +31,8 @@ nav ul li{
   width: 210px;
 }
 nav ul li a{
-  overflow: hidden;
-  display: block;;
+  /* overflow: hidden; */
+  display: block;
   padding-top: 44px;
   height: 0;
 }
@@ -80,10 +83,50 @@ nav ul li a:hover{
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
-
+#news ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+#news ul li{
+  padding: 20px 0 20px 175px;
+  border-bottom: 1px dotted #6c5f45;
+  color: #342300;
+  text-indent: -175px;
+}
+#news ul li time{
+  display: inline-block;
+  width: 175px;
+  font-weight: bold;
+  color: #6c5f45;
+  text-indent: 0;
+} /* */
 /* トップページ ここまで↑ */
 
 /* 「結婚式場のコンセプト」ページ ここから↓ */
+.concept_box{
+  margin-bottom: 30px;
+}
+.concept_box p{
+  text-indent: 1em;
+}
+.concept_box::after{
+  content: " ";
+  display: block;
+  clear: both;
+  font-size: 0;
+}
+.image_right{
+  float: right;
+  margin-left: 25px;
+}
+.image_left{
+  float: left;
+  margin-right: 25px;
+}
+concept_box:last-child,
+concept_box p:last-child{
+  margin-bottom: 0;
+}
 
 /* 「結婚式場のコンセプト」ページ ここまで↑ */
 
@@ -98,6 +141,7 @@ nav ul li a:hover{
 /* 「お問い合わせ」ページ ここから↓ */
 
 /* 「お問い合わせ」ページ ここまで↑ */
+}
 .clearfix::after{
   content: " ";
   display: block;
@@ -110,4 +154,7 @@ a:hover img{
 }
 nav ul li a:hover,#pagetop a:hover{
   opacity: 0.6;
+}
+#graphic {
+  cursor: crosshair;
 }
