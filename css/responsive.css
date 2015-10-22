@@ -80,6 +80,6 @@ footer p {
 	float: none;
 }
 /*オリジナル追加*/
-.gallery_box figure:first-child,.gallery_box figure{
+.gallery_box figure:first-child,.gallery_box figure,#breadcrumb{
   margin: 2.6%;
 }

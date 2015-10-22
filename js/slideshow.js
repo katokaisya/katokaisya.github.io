@@ -19,5 +19,5 @@ jQuery(function ($) {
 		$next.addClass('now');
 		
 	}
-	setInterval(changeImage, 4000);
+	setInterval(changeImage, 2000);
 });

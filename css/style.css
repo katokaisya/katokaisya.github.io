@@ -60,6 +60,7 @@ nav ul li#nav_contact a{
 #main{
   float: left;
   width: 570px;
+  margin-bottom: 30px;
 }
 #sub{
   float: right;
@@ -186,7 +187,32 @@ table tbody tr:nth-child(even){
 /* 「ブライダルフェア」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
-
+#contact #main ul li{
+  list-style-type: circle;
+  list-style-position: inside;
+  text-indent: 0.5em;
+}
+form p{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+form p:nth-last-child(2){
+  margin-bottom: 7px;
+}
+form p:last-child{
+  margin-bottom: 0;
+}
+input[type="text"]{
+  width: 200px
+}
+input[type="email"]{
+  width: 300px
+}
+textarea{
+  width: 420px;
+  height: 115px;
+  overflow-y:scroll;
+}
 /* 「お問い合わせ」ページ ここまで↑ */
 }
 
@@ -206,4 +232,8 @@ nav ul li a:hover,#pagetop a:hover{
 }
 #graphic {
   cursor: crosshair;
+}
+label{
+  cursor: pointer;
+  cursor: hand;
 }
