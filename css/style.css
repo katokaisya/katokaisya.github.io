@@ -48,8 +48,14 @@ nav ul li#nav_fair a{
 nav ul li#nav_contact a{
   background-image: url(../images/nav4.png);
 }
-#content{
+/*#content{
   overflow: hidden;
+}*/
+#content::after{
+  content: " ";
+  display: block;
+  clear: both;
+  font-size: 0;
 }
 #main{
   float: left;
@@ -131,7 +137,38 @@ concept_box p:last-child{
 /* 「結婚式場のコンセプト」ページ ここまで↑ */
 
 /* 「プランのご案内」ページ ここから↓ */
-
+th{ text-align: center; font-weight: bold;}
+table{
+  border-collapse:collapse;
+}
+caption{
+  text-align: left;
+  margin-bottom: 30px;
+}
+caption p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+table th,table td{
+  padding: 15px;
+  border: 1px solid #6c5f45;
+}
+table tr th:first-child{
+  width: 70px;
+}
+table tbody th,
+table tbody td{
+  vertical-align:top;
+}
+table thead tr th{
+  background-color:#eee8cc;
+}
+table tbody tr:nth-child(odd){
+  background-color:#ffffff;
+}
+table tbody tr:nth-child(even){
+  background-color:#f4f2f0;
+}
 /* 「プランのご案内」ページ ここまで↑ */
 
 /* 「ブライダルフェア」ページ ここから↓ */
