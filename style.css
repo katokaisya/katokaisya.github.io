@@ -1,19 +1,29 @@
 html,body{height: 100%;}
 *{margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
 a{text-decoration: none;}
-header,footer{width: 100%; min-height: 100px; overflow: hidden;  background-color: #eee;}
+header,footer{width: 100%; min-height: 60px; overflow: hidden;  background-color: #eee;}
 header{margin-top: 0;}
 footer address{width: 60%; text-align: center;  margin: 0 auto; height: 25px;}
-h1{width: 60%; font-size: 20px; padding: 20px;  margin: 0 auto;}
+header h1{
+  height: 80%;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px auto 0;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
 div{width: 60%; margin: 10px auto;}
+
 div ul li,p,#hensyu{
   list-style-type: none;
   display: block;
   margin-bottom: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
   border-radius: 3px;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  overflow: hidden;
 }
+div ul li span{ font-size: 80%; color: #999;  display: inline-block;  float: right; margin-right: 10px;}
 #comment,input[type="submit"]{
   height: 30px;
   border-radius: 3px;
@@ -23,7 +33,7 @@ div ul li,p,#hensyu{
 input[type="submit"]{width: 20%;}
 input[type="submit"]:hover {background-color: #efefef;}
 
-li{  padding: 10px; text-align: center;  border-radius: 3px;  }
+li{  padding: 10px; text-align: left;  border-radius: 3px;  }
 a:link li,a:visited li{  background-color: #fdd;}
 a:hover li{  background-color: #ffefef;  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);}
 #todos ul li{	text-align:left;	}
@@ -50,12 +60,13 @@ a:hover li{  background-color: #ffefef;  box-shadow: 1px 1px 2px rgba(0,0,0,0.5)
     transform: rotate(720deg);
     -webkit-transform: rotate(720deg);
 }
+#wrap{  margin-top: 0;  height:100%;  width: 100%;  background:url(pattern.png) 0 0 repeat;}
 
 /* CSSの条件振り分け*/
 /*=====================スマホ用============================================*/
 @media screen and (max-width: 640px){
 h1,div{ width: 90%; font-size: 120%;}
-header,footer{min-height: 60px;}
+header,footer{min-height: 60px; margin-top: 0;}
 }
 
 /*=====================タブレット用============================================*/
@@ -65,7 +76,6 @@ h1,div{ width: 80%; font-size: 150%;}
 /*=====================PC用============================================*/
 @media screen and (min-width: 768px) {
 body{ background: url(tukuezima.jpg) fixed center bottom;}
-#wrap{  margin-top: 0;  height:100%;  width: 100%;  background:url(pattern.png) 0 0 repeat;}
 header{margin-top: 0;  background-color: rgba(255,255,255,0.8);}
 #hensyu,p,#todos ul li {  background-color: rgba(255,255,255,0.8);}
 h1,div{ width: 60%; font-size: 120%;}
@@ -79,3 +89,5 @@ label{
   cursor: pointer;
   cursor: hand;
 }
+
+.left{text-align: left;}
