@@ -1,5 +1,6 @@
 html,body{height: 100%;}
 *{margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
+a{text-decoration: none;}
 header,footer{width: 100%; min-height: 100px; overflow: hidden;  background-color: #eee;}
 header{margin-top: 0;}
 footer address{width: 60%; text-align: center;  margin: 0 auto; height: 25px;}
@@ -26,7 +27,8 @@ li{  padding: 10px; text-align: center;  border-radius: 3px;  }
 a:link li,a:visited li{  background-color: #fdd;}
 a:hover li{  background-color: #ffefef;  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);}
 #todos ul li{	text-align:left;	}
-#hensyu{overflow: hidden;  margin-bottom: 120px;}
+#hensyu{  overflow: hidden;  margin-bottom: 120px;  }
+
 /*ボタン*/
 #pageback,#pagetop {  margin-top: 0;  margin-bottom: 0;  float: right;  }
 #pageback a,#pagetop a {  display: block;  text-align: center;  min-height: 16px;  padding: 6px 10px;}
@@ -66,11 +68,11 @@ body{ background: url(tukuezima.jpg) fixed center bottom;}
 #wrap{  margin-top: 0;  height:100%;  width: 100%;  background:url(pattern.png) 0 0 repeat;}
 header{margin-top: 0;  background-color: rgba(255,255,255,0.8);}
 #hensyu,p,#todos ul li {  background-color: rgba(255,255,255,0.8);}
-h1,div{ width: 60%; font-size: 150%;}
+h1,div{ width: 60%; font-size: 120%;}
 }
 
-body{position: relative;}
-footer{position: fixed;  left: 0; bottom:0; }
+body{ position: relative;}
+footer{ position: fixed;  left: 0; bottom:0; }
 
 
 label{
