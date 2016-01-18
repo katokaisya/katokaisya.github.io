@@ -1,9 +1,9 @@
-html,body{height: 100%;}
-*{margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
-a{text-decoration: none;}
-header,footer{width: 100%; min-height: 60px; overflow: hidden;  background-color: #eee;}
-header{margin-top: 0;}
-footer address{width: 60%; text-align: center;  margin: 0 auto; height: 25px;}
+html,body{  height: 100%; }
+*{  margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
+a{  text-decoration: none;  }
+header,footer{  width: 100%; min-height: 60px; overflow: hidden;  background-color: #333; }
+header{ margin-top: 0;  }
+footer address{ width: 60%; text-align: center;  margin: 0 auto; height: 25px; color: #eee; }
 header h1{
   height: 80%;
   font-size: 20px;
@@ -13,7 +13,7 @@ header h1{
   box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 div{width: 60%; margin: 10px auto;}
-
+div ul li img{float: left;  margin-right: 10px;}
 div ul li,p,#hensyu{
   list-style-type: none;
   display: block;
@@ -23,7 +23,6 @@ div ul li,p,#hensyu{
   box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   overflow: hidden;
 }
-div ul li span{ font-size: 80%; color: #999;  display: inline-block;  float: right; margin-right: 10px;}
 #comment,input[type="submit"]{
   height: 30px;
   border-radius: 3px;
@@ -60,37 +59,73 @@ a:hover li{  background-color: #ffefef;  box-shadow: 1px 1px 2px rgba(0,0,0,0.5)
     transform: rotate(720deg);
     -webkit-transform: rotate(720deg);
 }
-#wrap{  margin-top: 0;  height:100%;  width: 100%;  background:url(pattern.png) 0 0 repeat;}
+#wrap{  margin-top: 0;  height:100%;  width: 100%;  background:url(pattern.png) 0 0 repeat rgba(255,255,255,0.5);}
 
 /* CSSの条件振り分け*/
 /*=====================スマホ用============================================*/
 @media screen and (max-width: 640px){
 h1,div{ width: 90%; font-size: 120%;}
 header,footer{min-height: 60px; margin-top: 0;}
+div ul li{  padding-left: 10px;  padding-right: 10px;}
+div ul li span{ font-size: 60%; color: #999;  display: inline-block; margin-right: 10px; word-break:break-all;}
+div ul li img{height: 40px; margin-left: 0;}
 }
 
 /*=====================タブレット用============================================*/
 @media screen and (min-width: 640px) {
 h1,div{ width: 80%; font-size: 150%;}
+div ul li span{ font-size: 80%; color: #999;  display: inline-block;  float: right; margin-right: 10px; word-break:break-all;}
 }
 /*=====================PC用============================================*/
 @media screen and (min-width: 768px) {
-body{ background: url(tukuezima.jpg) fixed center bottom;}
+body{
+  background:url(slide/tukuezima.jpg),
+             url(slide/slide1.jpg),
+             url(slide/slide2.jpg),
+             url(slide/slide3.jpg),
+             url(slide/slide4.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment:fixed;
+  animation: anime1 21s ease-in-out 1s infinite normal;
+}
+@keyframes anime1 {
+0%,90% { background:url(slide/tukuezima.jpg);}
+18% { background:url(slide/slide1.jpg);}
+38% { background:url(slide/slide2.jpg);}
+58% { background:url(slide/slide3.jpg);}
+78% { background:url(slide/slide4.jpg);}
+0%,90%,18%,38%,58%,78%{
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment:fixed;}
+}
 header{margin-top: 0;  background-color: rgba(255,255,255,0.8);}
 #hensyu,p,#todos ul li {  background-color: rgba(255,255,255,0.8);}
 h1,div{ width: 60%; font-size: 120%;}
+div ul li span{ font-size: 80%; color: #999;  display: inline-block;  float: right; margin-right: 10px; word-break:break-all;}
 }
 
 body{ position: relative;}
 footer{ position: fixed;  left: 0; bottom:0; }
 
-
 label{
   cursor: pointer;
   cursor: hand;
 }
-
+.conte img{max-width: 100%; max-height: 100%;}
+.f-left{float: left;}
+.f-right{float: right;}
 .left{text-align: left;}
+
+.mr0{ margin-right: 0;}
+.mr5{ margin-right: 5px;}
+.mr10{ margin-right: 10px;}
+.mr15{ margin-right: 15px;}
+
+
 /*=====================埋め込みフォント============================================*/
 .jun {font-family: "a-otf-jun-pro";}
 .singo{font-family: "a-otf-ud-shin-go-pr6n";}
