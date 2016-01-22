@@ -148,6 +148,7 @@ canvas#world{z-index: 0;}
 /*=====================ロード画面============================================*/
 
 #loader {
+    font-size: 90%;
     width: 50%;
     height: 50%;
     display: none;
