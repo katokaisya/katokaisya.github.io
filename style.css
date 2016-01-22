@@ -66,7 +66,7 @@ a:hover li{  background-color: rgba(255,100,100,0.8);  box-shadow: 1px 1px 2px r
 }
 #wrap,#wrap2{  margin-top: 0;  height:100%;  width: 100%;}
 #wrap{  background:url(pattern.png) 0 0 repeat rgba(100,100,100,0.5);}
-#wrap2 li{ text-shadow: 1px 1px 1px #000;}
+#wrap2 #todos ul li{ text-shadow: 1px 1px 1px #000;}
 /* CSSの条件振り分け*/
 /*=====================スマホ用============================================*/
 @media screen and (max-width: 640px){
