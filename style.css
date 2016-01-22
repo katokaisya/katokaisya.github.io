@@ -144,3 +144,29 @@ label{
 
 
 canvas#world{z-index: 0;}
+
+/*=====================ロード画面============================================*/
+
+#loader {
+    width: 50%;
+    height: 50%;
+    display: none;
+    position: fixed;
+    _position: absolute; /* IE6対策 */
+    top: 50%;
+    left: 50%;
+    margin-top: -XXpx; /* heightの半分のマイナス値 */
+    margin-left: -XXXpx; /* widthの半分のマイナス値 */
+    z-index: 100;
+}
+ 
+#fade {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+}

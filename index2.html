@@ -6,8 +6,10 @@
   <title>APIテスト</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/loading.js"></script>
 </head>
 <body>
+<div id="fade"></div>
 <div id="wrap2">
 <header id="top">
   <h1>APIテスト</h1>
@@ -24,7 +26,9 @@
     <input type="submit">
   </form>
 </div>
-<div id="todos"></div>
+<div id="todos">
+  <div id="loader">現在サーバーがお休み中です<br>温かい目で見守ってください…</div>
+</div>
 <a href="https://mytodokato.herokuapp.com/todos/new" target="_blank"><div id="hensyu">スケジュールを編集する</div></a>
 <footer>
   <address>&copy; kato.kaisya</address>
