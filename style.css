@@ -1,4 +1,4 @@
-html,body{  height: 100%; }
+html,body{  height: 100vh; }
 *{  margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
 a{  text-decoration: none;  }
 header,footer{  width: 100%; min-height: 60px; overflow: hidden;}
@@ -64,7 +64,7 @@ a:hover li{  background-color: rgba(255,100,100,0.8);  box-shadow: 1px 1px 2px r
     transform: rotate(720deg);
     -webkit-transform: rotate(720deg);
 }
-#wrap,#wrap2{  margin-top: 0;  height:100%;  width: 100%;}
+#wrap,#wrap2{  margin-top: 0;  height:100vh;  width: 100%;}
 #wrap{  background:url(pattern.png) 0 0 repeat rgba(100,100,100,0.5);}
 /* CSSの条件振り分け*/
 /*=====================スマホ用============================================*/
@@ -164,7 +164,7 @@ canvas#world{z-index: 0;}
  
 #fade {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: none;
     background-color: rgba(255,255,255,0.5);
     position: absolute;
