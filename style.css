@@ -64,7 +64,7 @@ a:hover li{  background-color: rgba(255,100,100,0.8);  box-shadow: 1px 1px 2px r
     transform: rotate(720deg);
     -webkit-transform: rotate(720deg);
 }
-#wrap,#wrap2{  margin-top: 0;  height:100vh;  width: 100%;}
+#wrap,#wrap2{  margin-top: 0;  height:100vh;  width: 100%;  position: fixed;}
 #wrap{  background:url(pattern.png) 0 0 repeat rgba(100,100,100,0.5);}
 /* CSSの条件振り分け*/
 /*=====================スマホ用============================================*/
