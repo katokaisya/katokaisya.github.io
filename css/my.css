@@ -101,6 +101,17 @@ header p,article{ width: 60%; font-size: 80%;   margin: 0 auto;}
 .dropmenu li{ width: 25%; margin: 0 auto;}
 }
 /*=====================ここまで============================================*/
+/*=====================埋め込みフォント============================================*/
+.jun {font-family: "a-otf-jun-pro";}
+.singo{font-family: "a-otf-ud-shin-go-pr6n";}
+.ryumin{font-family: "a-otf-ryumin-pr6n";}
+.midashi-go{font-family: "a-otf-midashi-go-mb31-pr6n";}
+.midashi-mi{font-family: "a-otf-midashi-mi-ma31-pr6n";}
+.tk-futura-pt-condensed{font-family: "futura-pt-condensed";}
+.tk-futura-pt{font-family: "futura-pt";}
+
+/*=====================スマホ折り畳みメニュー============================================*/
+
 .rei {
   display:none;
 }
