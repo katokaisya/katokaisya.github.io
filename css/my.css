@@ -1,0 +1,218 @@
+@charaset "utf-8";
+
+/* --------------------------------------------------
+  全体
+-------------------------------------------------- */
+html,body{  height: 100vh; }
+*{  margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
+a{  text-decoration: none;  }
+header,footer{  width: 100%; min-height: 60px; overflow: hidden;}
+footer{  background-color: rgba(66,66,66,0.8); }
+header{ margin-top: 0;  }
+footer address{ width: 60%; text-align: center;  margin: 0 auto; height: 25px; color: #eee; }
+header h1,header p{
+  height: 80%;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px auto 0;
+  color: rgba(255,255,255,0.8);
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 1px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px #000;
+}
+h2,h4,section p{width:94%; text-align:left;  padding:5px 3%;  background: rgba(255,255,255,0.4); margin-bottom: 5px;}
+section{margin-top: 20px;}
+h3{padding: 0;}
+.conte{padding-top: 10px;  background:url(pattern.png) 0 0 repeat rgba(100,100,100,0.5); padding-bottom: 100px;}
+div ul li img{  float: left;  margin-right: 10px; border-radius: 50%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5);}
+div.conte ul li,section p{
+  list-style-type: none;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+div ul li{  padding: 10px 5px; text-align: left;  border-radius: 3px;  color: rgba(255,255,255,0.8); text-shadow: 1px 1px 3px #000;}
+div ul a:link li,a:visited li{
+    /*アニメーション指定*/
+    transition-property: background;
+    transition-duration:0.3s;
+    transition-timing-function:ease-in-out;
+    transition-delay:0s;
+    background-color: rgba(255,100,100,0.5);
+}
+div ul a:hover li{    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);  background-color: rgba(255,100,100,0.8);  color: white;  }
+.rei p{ margin-bottom: 5px; box-shadow: 1px 1px 3px rgba(0,0,0,0.5);}
+/* CSSの条件振り分け*/
+/*=====================スマホ用============================================*/
+@media screen and (max-width: 640px){
+h1{ width: 90%; font-size: 120%;   margin: 0 auto;}
+header p{ font-size: 90%;}
+header,footer{min-height: 60px; margin-top: 0;}
+div ul li{ font-size: 80%;  padding-left: 10px;  padding-right: 10px;}
+div ul li span{ font-size: 60%;  display: inline-block; float:right;margin-right: virticul-align:bottom; 10px; word-break:break-all;}
+div ul li img{height: 50px; margin-left: 0; border-radius: 40%;}
+#todos ul li{font-size:80%;  text-shadow: 0px 0px 0px #000; }
+.dropmenu li{ width: 100%; margin: 2px auto;}
+.tatamu{z-index: 99999;position: fixed; top: 0px;  visibility: visible;}
+h3 img{display: none;}
+h2,h3,h4,p{font-size: 80%;}
+}
+
+/*=====================タブレット用============================================*/
+@media screen and (min-width: 640px) {
+h1,article{ width: 80%; font-size: 130%;   margin: 0 auto;}
+div ul li span{ font-size: 70%; display: inline-block;  float: right; margin-right: 10px; word-break:break-all;}
+.dropmenu li{ width: 25%; margin: 0 auto;}
+}
+/*=====================PC用============================================*/
+@media screen and (min-width: 768px) {
+body{
+  background:url(../slide/tukuezima.jpg),
+             url(../slide/slide1.jpg),
+             url(../slide/slide2.jpg),
+             url(../slide/slide3.jpg),
+             url(../slide/slide4.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment:fixed;
+  animation: anime1 60s ease-in-out 1s infinite normal;
+}
+@keyframes anime1 {
+0%,90% { background:url(../slide/tukuezima.jpg);}
+18% { background:url(../slide/slide1.jpg);}
+38% { background:url(../slide/slide2.jpg);}
+58% { background:url(../slide/slide3.jpg);}
+78% { background:url(../slide/slide4.jpg);}
+0%,90%,18%,38%,58%,78%{
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment:fixed;}
+}
+header{margin-top: 0;  background-color: rgba(255,255,255,0.1);  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);}
+#hensyu,#todos ul li {  background-color: rgba(255,255,255,0.8);}
+h1,article{ width: 60%; font-size: 120%;   margin: 0 auto;}
+header p,article{ width: 60%; font-size: 80%;   margin: 0 auto;}
+.rei ul li span{font-size: 80%;  display: block; float: right; margin-right: 10px; word-break:break-all;}
+.dropmenu li{ width: 25%; margin: 0 auto;}
+}
+/*=====================ここまで============================================*/
+.rei {
+  display:none;
+}
+.togmenu {
+    display:block!important;
+  }
+.menubtn {
+  padding: 16px 20px;
+  background:rgba(0,0,0,0.5);
+  color: #fff;
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+#menu li { widt:100%;
+  list-style: none;
+  border-top: 2px solid #fff;
+}
+#menu li a {
+  padding: 16px 0px;
+  display:block;
+  text-decoration:none;
+  background:rgba(0,0,0,0.5);
+  color: #fff;
+}
+@media only screen and (min-width: 800px) {
+  .menubtn {
+    display:none;
+  }
+  .rei {
+    display:block;
+  }
+  #menu li {
+    min-width: 100%;
+    display: inline-block;
+    border:none;
+  }
+}
+/*==============アコーディオン==============*/
+.accordion {  padding:5px; clear:both; }
+.accordion label{
+  display: block;
+  margin-top: 5px;
+  padding: 21px 5px;
+  background: url(img/open.png)no-repeat 95% center rgba(255,144,48,0.5);
+  text-indent:1em;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(3,2,0,0.8);
+}
+.accordion label img{ margin-right:10px;  vertical-align:-25%;}
+.accordion input[type="checkbox"]{
+  display: none;
+}
+.accordion .accordionIn {
+  overflow: hidden;
+  height: 0;
+  text-decoration: none;
+  -webkit-transition: height .5s ease-out;
+  transition: height .5s ease-out linear;
+}
+.accordion input[type="checkbox"]:checked + .in1{  height: 4em;}
+.accordion input[type="checkbox"]:checked + .in2{  height: 16em;}
+.accordion input[type="checkbox"]:checked + .in3{  height: 24em;}
+.accordion input[type="checkbox"]:checked + .in4{  height: 34em;}
+.accordion input[type="checkbox"]:checked + .in5{  height: 40em;}
+.accordion input[type="checkbox"]:checked + .in6{  height: 35em;}
+.accordion input[type="checkbox"]:checked + .accordionIn{
+  width:99.8%;
+  display:block;
+  overflow: auto;
+  background-color: rgba(255,255,255,0.5);
+  color: #333;
+  border: 1px solid  rgba(255,144,48,0.5);
+  box-shadow: 1px 1px 2px rgba(3,2,0,0.8);
+}
+
+.accordion input[type="checkbox"]:checked + .accordionIn p{  height: auto;  padding: 5px;}
+.accordion label img{ margin-right:10px;  vertical-align:-25%;}
+.accordion label.active{
+  background: url(img/close.png)no-repeat 95% center  rgba(255,144,48,0.5);
+}
+
+
+/*============ボタン============*/
+#pageback,#pagetop {
+  margin-top: 0;
+  margin-bottom: 0;
+  float: right;
+}
+#pageback a,#pagetop a {
+  display: block;
+  text-align: center;
+  min-height: 16px;
+  padding: 6px 10px;
+}
+.btn01 {
+    font-size: 70%;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 5%;
+    /* ここで動く速度とか設定 */
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.btn01:hover {
+    transform: rotateY(720deg);
+    -webkit-transform: rotateY(720deg);
+}
+
