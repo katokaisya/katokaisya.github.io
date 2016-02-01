@@ -160,7 +160,7 @@ body{
   box-shadow: 1px 1px 2px rgba(3,2,0,0.8);
 }
 
-.accordion input[type="checkbox"]:checked + .accordionIn p{  height: auto;  padding: 5px;	font-size: 70%;}
+.accordionIn p{  height: auto;  padding: 5px;	font-size: 70%;}
 .accordion label img{ margin-right:10px;  vertical-align:-25%;}
 .accordion label.active{
   background: url(img/close.png)no-repeat 95% center  rgba(255,144,48,0.5);
