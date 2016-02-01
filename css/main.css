@@ -1,0 +1,169 @@
+@charaset "utf-8";
+@import url("paradeiser.css");/*paradeiser*/
+html,body{  height: 100vh; }
+*{  margin: 0;  padding: 0; font-family: century,"メイリオ";  font-style: normal; font-weight: normal;}
+a{  text-decoration: none;  }
+/* --------------------------------------------------
+  全体
+-------------------------------------------------- */
+.box1{background-color:  rgba(255,0,0,0.9);	width: 100%;  box-shadow: 1px 2px 3px rgba(0,0,0,0.5);	margin-bottom: 10px;}
+.box3{	height: auto;	margin: 0 auto;	overflow: hidden;}
+.box4{background-color: red;		width: 100%;	height: 80px;	margin-top: 10px;}
+footer address{ width: 60%; text-align: center;  margin: 0 auto; height: 25px; color: #eee; }
+
+
+div ul li img{  float: left;  margin-right: 10px; border-radius: 50%; box-shadow: 1px 1px 2px rgba(0,0,0,0.5);}
+div ul li,aside p{
+  list-style-type: none;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+aside p{background-color: rgba(255,255,255,0.5); padding: 2px;}
+h2,h4,article p{padding: 5px;}
+article p{font-size: 90%;}
+h2,h4{margin: 5px 5px 2px; box-shadow: 1px 1px 2px rgba(0,0,0,0.5);	background-color: rgba(48,48,48,0.5);	color:#fff;	}
+div ul li{  font-size: 80%;	padding: 5px 5px; text-align: left;  border-radius: 1px;  color: rgba(255,255,255,0.8); text-shadow: 1px 1px 1px #000;}
+div ul a:link li,a:visited li{
+    /*アニメーション指定*/
+    transition-property: background;
+    transition-duration:0.3s;
+    transition-timing-function:ease-in-out;
+    transition-delay:0s;
+    background-color: rgba(255,100,100,0.5);
+}
+div ul a:hover li{    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);  background-color: rgba(255,100,100,0.8);  color: white;  }
+
+
+/* CSSの条件振り分け*/
+/*=====================スマホ用============================================*/
+@media screen and (max-width: 640px){
+	.box3{width: 95%;}
+	article{width: 100%;	background-color: rgba(255,255,255,0.8);}
+	aside{width: 100%;	background-color: rgba(200,200,200,0.8);}
+	h3{font-size: 70%;}
+}
+
+/*=====================タブレット用============================================*/
+@media screen and (min-width: 640px) {
+}
+
+/*=====================PC用============================================*/
+@media screen and (min-width: 768px) {
+	.box3{width: 980px;min-height: 500px;}
+	header,footer,nav{width: 980px; margin-left: auto;	margin-right: auto;}
+	article{width: 62%;	float: left;	min-height: 500px;	background-color: rgba(255,255,255,0.8);}
+	aside{width: 37%;	float: right;}
+	h3{font-size: 100%;}
+body{
+  background:url(../slide/tukuezima.jpg),
+             url(../slide/slide1.jpg),
+             url(../slide/slide2.jpg),
+             url(../slide/slide3.jpg),
+             url(../slide/slide4.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment:fixed;
+  animation: anime1 60s ease-in-out 1s infinite normal;
+}
+@keyframes anime1 {
+0%,90% { background:url(../slide/tukuezima.jpg);}
+18% { background:url(../slide/slide1.jpg);}
+38% { background:url(../slide/slide2.jpg);}
+58% { background:url(../slide/slide3.jpg);}
+78% { background:url(../slide/slide4.jpg);}
+0%,90%,18%,38%,58%,78%{
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment:fixed;}
+}}
+
+
+/*=====================埋め込みフォント============================================*/
+.jun {font-family: "a-otf-jun-pro";}
+.singo{font-family: "a-otf-ud-shin-go-pr6n";}
+.ryumin{font-family: "a-otf-ryumin-pr6n";}
+.midashi-go{font-family: "a-otf-midashi-go-mb31-pr6n";}
+.midashi-mi{font-family: "a-otf-midashi-mi-ma31-pr6n";}
+.tk-futura-pt-condensed{font-family: "futura-pt-condensed";}
+.tk-futura-pt{font-family: "futura-pt";}
+
+/*============ボタン============*/
+#pageback,#pagetop {
+  margin-top: 0;
+  margin-bottom: 0;
+  float: right;
+}
+#pageback a,#pagetop a {
+  display: block;
+  text-align: center;
+  min-height: 16px;
+  padding: 6px 10px;
+}
+.btn01 {
+    font-size: 70%;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 5%;
+    /* ここで動く速度とか設定 */
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.btn01:hover {
+    transform: rotateY(720deg);
+    -webkit-transform: rotateY(720deg);
+}
+/*==============アコーディオン==============*/
+.accordion {  padding:5px; clear:both; }
+.accordion label{
+  display: block;
+  margin-top: 5px;
+  padding: 21px 5px;
+  background: url(img/open.png)no-repeat 95% center rgba(255,144,48,0.5);
+  text-indent:1em;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(3,2,0,0.8);
+}
+.accordion label img{ margin-right:10px;  vertical-align:-25%;}
+.accordion input[type="checkbox"]{
+  display: none;
+}
+.accordion .accordionIn {
+  overflow: hidden;
+  height: 0;
+  text-decoration: none;
+  -webkit-transition: height .5s ease-out;
+  transition: height .5s ease-out linear;
+}
+.accordion input[type="checkbox"]:checked + .in1{  height: 4em;}
+.accordion input[type="checkbox"]:checked + .in2{  height: 16em;}
+.accordion input[type="checkbox"]:checked + .in3{  height: 24em;}
+.accordion input[type="checkbox"]:checked + .in4{  height: 34em;}
+.accordion input[type="checkbox"]:checked + .in5{  height: 40em;}
+.accordion input[type="checkbox"]:checked + .in6{  height: 35em;}
+.accordion input[type="checkbox"]:checked + .accordionIn{
+  width:99.8%;
+  display:block;
+  overflow: auto;
+  background-color: rgba(255,255,255,0.5);
+  color: #333;
+  border: 1px solid  rgba(255,144,48,0.5);
+  box-shadow: 1px 1px 2px rgba(3,2,0,0.8);
+}
+
+.accordion input[type="checkbox"]:checked + .accordionIn p{  height: auto;  padding: 5px;	font-size: 70%;}
+.accordion label img{ margin-right:10px;  vertical-align:-25%;}
+.accordion label.active{
+  background: url(img/close.png)no-repeat 95% center  rgba(255,144,48,0.5);
+}
+
+.center{text-align: center;}

@@ -28,5 +28,6 @@ function reS(){
 $(function(){
     $(".menubtn").click(function(){
         $("#menu").toggleClass('togmenu');
-    }); 
+    });
 });
+
